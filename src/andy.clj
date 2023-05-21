@@ -1,7 +1,6 @@
 (ns andy
   (:require [clojure.data.csv :refer [read-csv]]
-            [clojure.java.io :as io]
-            [clojure.java.shell :refer [sh]]))
+            [clojure.java.io :as io]))
 
 
 (defn comment? [[line :as v]]
@@ -26,6 +25,7 @@
 
 (comment
   ;; open random note
+  (require '[clojure.java.shell :refer [sh]])
   (sh "xdg-open" (rand-nth andy-note-urls))
 
   ;; write note urls to file
