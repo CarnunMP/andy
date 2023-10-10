@@ -1,6 +1,6 @@
 # andy
 
-Little script for opening a random https://notes.andymatuschak.org note.
+Little [babashka](https://babashka.org) script for opening a random https://notes.andymatuschak.org note.
 
 ### usage
 
