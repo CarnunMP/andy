@@ -4,16 +4,23 @@ Little [babashka](https://babashka.org) script for opening a random https://note
 
 ### usage
 
-The script is globally available, like so:
+Clone this repo _somewhere_ on your machine. Then (if you like) make the script globally available with a symlink:
 
 ```bash
-$ bb .bb/andy.clj
-
-# or, after `chmod a+x .bb/andy.clj`, just:
-$ .bb/andy.clj
+ln -s ~/<somewhere>/andy/bin/andy.clj .bb/andy.clj
+## or `mklink ...` or whatever the Windows equivalent is 😅
 ```
 
-This is thanks to a symlink from `.bb/andy.clj` to `./bin/andy.clj`.
+Now:
+
+```bash
+bb .bb/andy.clj
+# opening https://notes.andymatuschak.org/z5FKgZAnMhS73t9kenbVUYx23CHSQAE1gKxVf
+
+## or, after `chmod a+x .bb/andy.clj`, just:
+.bb/andy.clj
+# opening https://notes.andymatuschak.org/z3wZ7ebhYtWDJS2cSgoER2nZwMz2Zpc2pVAYz
+```
 
 ### Updating
 
